@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+background-color: lightblue;
+width: 100%;
+height: 100vh;
+display: flex;
+
+
+
+}
+
+.digitalclock{
+width: 800px;
+height: 280px;
+margin: 35vh;
+background-color: lightskyblue;   
+justify-content: center;
+
+}
+
+.time{
+ align-items: center;
+ justify-content: center;
+ display: flex;
+ width: 100%;
+ height: 80%;
+
+}
+
+.time span{
+    font-size: 80px;  
+    padding: 20px;
+    position: relative;
+    
+ }
+
+.time span::after{
+font-size: 16px;
+position: absolute;
+bottom: -1px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+ #hours::after{
+    content: 'Hours';
+ }
+
+ #minutes::after{
+    content: 'Minutes';
+ }
+
+ #seconds::after{
+    content: 'Seconds';
+ }
